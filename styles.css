@@ -1,0 +1,109 @@
+:root {
+    --main-blue: #3a37ee;
+    --purple: #a500ff;
+    --pink: #ee00ff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    line-height: 1.7;
+}
+
+body {
+    background: linear-gradient(to right, #3a37ee, #fc466b);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+}
+
+form {
+    background: rgba(255, 255, 255, 0.05);
+    height: 500px;
+    width: 40%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    color: #fff;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1), -2px -2px 5px rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    --webkit-backdrop-filter: blur(10px);
+    text-align: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 2.3rem;
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.05);
+}
+
+
+form input {
+    width: 100%;
+    margin: 10px 0;
+    border: 0;
+    font-family: inherit;
+    border-radius: 50px;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.05);
+    color: #fff;
+}
+
+form input::placeholder {
+    color: #fff;
+    font-family: inherit;
+}
+
+button {
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.05);
+    padding: 10px 15px;
+    width: 100px;
+    border-radius: 50px;
+    margin-top: 20px;
+    border: 0;
+}
+
+button:hover {
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+button .btn {
+    color: #fff;
+    text-decoration: none;
+}
+
+form input:focus,
+.btn:active {
+    outline: none;
+    border: 0;
+}
+
+.password a {
+    font-size: 12px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+/* Media Queries */
+@media(max-width:500px){
+   form   {
+        width: 80%;
+        margin: 0 auto;
+    }
+   form  * {
+       font-size: 15px;
+    }
+   h1 {
+       font-size: 1.5rem;
+    }
+}
